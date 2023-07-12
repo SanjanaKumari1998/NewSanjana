@@ -31,11 +31,11 @@ assert "prime deals" in driver.title
 belt_link = driver.find_element("xpath","/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div/div[2]/div/span/a/div")
 # belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
 belt_link.click()
+time.sleep(4)
 
 
 
-# Waiting for the laptop details page to load
-time.sleep(5)
+
 
 #size_element = driver.find_element("id""waist 28-34")
 #driver.find_element("xpath","//html/body/div[2]/div[2]/div[5]/div[1]/div[1]/div[2]/div[2]/div/div/div[1]/d#iv[19]/div[1]/div[2]/form/div[1]/span/span/select")
@@ -46,7 +46,7 @@ time.sleep(5)
 baby_link = driver.find_element("xpath","/html/body/div[1]/header/div/div[6]/div/a[7]/span")
 # belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
 baby_link.click()
-
+time.sleep(4)
 
 epic_link = driver.find_element("xpath","/html/body/div[1]/div[2]/div[2]/div[1]/div[1]/div/div/div/div/div/div/div/div/a/img")
 # belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
