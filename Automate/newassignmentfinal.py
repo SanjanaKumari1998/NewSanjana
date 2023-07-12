@@ -28,7 +28,7 @@ time.sleep(5)
 assert "prime deals" in driver.title
 
 # Selecting a belt from the search results
-belt_link = driver.find_element("xpath","/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div/div[1]/div/span/a/div/img")
+belt_link = driver.find_element("xpath","/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div/div[2]/div/span/a/div")
 # belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
 belt_link.click()
 
@@ -42,18 +42,35 @@ time.sleep(5)
 #size_element.click()
 
 
+# click on the baby link
+baby_link = driver.find_element("xpath","/html/body/div[1]/header/div/div[6]/div/a[7]/span")
+# belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
+baby_link.click()
+
+
+epic_link = driver.find_element("xpath","/html/body/div[1]/div[2]/div[2]/div[1]/div[1]/div/div/div/div/div/div/div/div/a/img")
+# belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
+epic_link.click()
+time.sleep(3)
+
+tryprime = driver.find_element("xpath","/html/body/div[1]/div[2]/div[9]/div/div/button/span/span/div")
+# belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
+tryprime.click()
+time.sleep(3)
+
+
 
 
 # Selecting free returns 
-free_returns=driver.find_element("xpath","/html/body/div[2]/header/div/div[6]/div/a[10]/span/img")
+#free_returns = driver.find_element("xpath","/html/body/div[1]/header/div/div[6]/div/a[10]/span/img")
 # belt_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
-free_returns.click()
+#free_returns.click()
 
 
 
-clothingaccessorieslink = driver.find_element("xpath","/html/body/div[1]/div[2]/div[2]/div[3]/div/div/div/div/div/div/div/div/div/p[1]/a[1]")
+#clothingaccessorieslink = driver.find_element("xpath","/html/body/div[1]/div[2]/div[2]/div[3]/div/div/div/div/div/div/div/div/div/p[1]/a[1]")
 # clothing_link = driver.find_element("By.CSS_SELECTOR","span[data-component-type='s-product-image'] a")
-clothingaccessorieslink.click()
+#clothingaccessorieslink.click()
 
 
 
@@ -72,7 +89,7 @@ time.sleep(5)
 
 #try prime = #driver.find_element("xpath","/html/body/div[2]/div[2]/div[5]/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/di#v[3]/div/div[1]/div/div[1]/div/div/div[1]/div/div[2]/div[9]/section/div/div/div[3]/span/span/a")
 #try prime.click()
-time.sleep(2)
+#time.sleep(5)
 
 
 
